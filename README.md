@@ -1,10 +1,24 @@
 # QA Strategy - Agibank Test Ecosystem
 
+Frontend (E2E)
+      ↓
+API (validação de regras)
+      ↓
+Backend
+      ↓
+Performance (carga)
+
 ## Visão Geral
 
 Este conjunto de projetos representa uma estratégia completa de qualidade de software, cobrindo diferentes camadas de teste para garantir confiabilidade, estabilidade e escalabilidade da aplicação.
 
 A abordagem segue princípios modernos de QA, incluindo separação por camadas, automação contínua e validação orientada a risco.
+
+## Decisões Técnicas
+
+- Cypress foi utilizado para E2E devido à facilidade de integração e execução em CI
+- Testes de API focam em validação rápida e confiável de regras de negócio
+- JMeter foi utilizado para análise de performance e geração de relatórios detalhados
 
 ## Arquitetura de Testes
 
@@ -20,13 +34,9 @@ A estratégia está organizada em três camadas principais:
 
 ## Estratégia de Qualidade
 
-A estratégia segue o conceito de pirâmide de testes:
+## Estratégia
 
-- Testes de API garantem validação rápida e confiável das regras de negócio
-- Testes E2E validam os fluxos críticos do usuário
-- Testes de performance avaliam a capacidade do sistema sob carga
-
-Essa abordagem reduz custo de manutenção, aumenta cobertura e melhora a confiabilidade das entregas.
+A abordagem adotada prioriza validação em camadas para reduzir custo de manutenção, aumentar confiabilidade e antecipar falhas antes da camada E2E.
 
 ---
 
